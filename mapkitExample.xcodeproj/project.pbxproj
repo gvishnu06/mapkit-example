@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2750EA201C1F56180000278A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750EA1F1C1F56180000278A /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2750EA231C1F56210000278A /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750EA221C1F56210000278A /* LocationManager.m */; settings = {ASSET_TAGS = (); }; };
 		27F49ACC1C1ED14500FB9C85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F49ACB1C1ED14500FB9C85 /* main.m */; };
 		27F49ACF1C1ED14500FB9C85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F49ACE1C1ED14500FB9C85 /* AppDelegate.m */; };
-		27F49AD21C1ED14500FB9C85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F49AD11C1ED14500FB9C85 /* ViewController.m */; };
 		27F49AD51C1ED14500FB9C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F49AD31C1ED14500FB9C85 /* Main.storyboard */; };
 		27F49AD71C1ED14500FB9C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F49AD61C1ED14500FB9C85 /* Assets.xcassets */; };
 		27F49ADA1C1ED14500FB9C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F49AD81C1ED14500FB9C85 /* LaunchScreen.storyboard */; };
 		27F49AE51C1ED14500FB9C85 /* mapkitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F49AE41C1ED14500FB9C85 /* mapkitExampleTests.m */; };
 		27F49AF01C1ED14500FB9C85 /* mapkitExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F49AEF1C1ED14500FB9C85 /* mapkitExampleUITests.m */; };
 		27F49AFE1C1ED55E00FB9C85 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F49AFD1C1ED55E00FB9C85 /* MapKit.framework */; };
-		27F49B011C1ED7B100FB9C85 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F49B001C1ED7B100FB9C85 /* LocationManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2750EA1E1C1F56180000278A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controllers/ViewController.h; sourceTree = "<group>"; };
+		2750EA1F1C1F56180000278A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/ViewController.m; sourceTree = "<group>"; };
+		2750EA211C1F56210000278A /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationManager.h; path = Managers/LocationManager.h; sourceTree = "<group>"; };
+		2750EA221C1F56210000278A /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationManager.m; path = Managers/LocationManager.m; sourceTree = "<group>"; };
 		27F49AC71C1ED14500FB9C85 /* mapkitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapkitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F49ACB1C1ED14500FB9C85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27F49ACD1C1ED14500FB9C85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27F49ACE1C1ED14500FB9C85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27F49AD01C1ED14500FB9C85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		27F49AD11C1ED14500FB9C85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		27F49AD41C1ED14500FB9C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27F49AD61C1ED14500FB9C85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27F49AD91C1ED14500FB9C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		27F49AEF1C1ED14500FB9C85 /* mapkitExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapkitExampleUITests.m; sourceTree = "<group>"; };
 		27F49AF11C1ED14500FB9C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F49AFD1C1ED55E00FB9C85 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		27F49AFF1C1ED7B100FB9C85 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		27F49B001C1ED7B100FB9C85 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2750EA1C1C1F55AC0000278A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2750EA1E1C1F56180000278A /* ViewController.h */,
+				2750EA1F1C1F56180000278A /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2750EA1D1C1F55B60000278A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2750EA211C1F56210000278A /* LocationManager.h */,
+				2750EA221C1F56210000278A /* LocationManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		27F49ABE1C1ED14500FB9C85 = {
 			isa = PBXGroup;
 			children = (
@@ -108,17 +126,15 @@
 		27F49AC91C1ED14500FB9C85 /* mapkitExample */ = {
 			isa = PBXGroup;
 			children = (
+				2750EA1D1C1F55B60000278A /* Managers */,
+				2750EA1C1C1F55AC0000278A /* Controllers */,
 				27F49ACD1C1ED14500FB9C85 /* AppDelegate.h */,
 				27F49ACE1C1ED14500FB9C85 /* AppDelegate.m */,
-				27F49AD01C1ED14500FB9C85 /* ViewController.h */,
-				27F49AD11C1ED14500FB9C85 /* ViewController.m */,
 				27F49AD31C1ED14500FB9C85 /* Main.storyboard */,
 				27F49AD61C1ED14500FB9C85 /* Assets.xcassets */,
 				27F49AD81C1ED14500FB9C85 /* LaunchScreen.storyboard */,
 				27F49ADB1C1ED14500FB9C85 /* Info.plist */,
 				27F49ACA1C1ED14500FB9C85 /* Supporting Files */,
-				27F49AFF1C1ED7B100FB9C85 /* LocationManager.h */,
-				27F49B001C1ED7B100FB9C85 /* LocationManager.m */,
 			);
 			path = mapkitExample;
 			sourceTree = "<group>";
@@ -279,8 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F49B011C1ED7B100FB9C85 /* LocationManager.m in Sources */,
-				27F49AD21C1ED14500FB9C85 /* ViewController.m in Sources */,
+				2750EA231C1F56210000278A /* LocationManager.m in Sources */,
+				2750EA201C1F56180000278A /* ViewController.m in Sources */,
 				27F49ACF1C1ED14500FB9C85 /* AppDelegate.m in Sources */,
 				27F49ACC1C1ED14500FB9C85 /* main.m in Sources */,
 			);
@@ -506,6 +522,7 @@
 				27F49AF61C1ED14500FB9C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27F49AF71C1ED14500FB9C85 /* Build configuration list for PBXNativeTarget "mapkitExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +531,7 @@
 				27F49AF91C1ED14500FB9C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27F49AFA1C1ED14500FB9C85 /* Build configuration list for PBXNativeTarget "mapkitExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +540,7 @@
 				27F49AFC1C1ED14500FB9C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

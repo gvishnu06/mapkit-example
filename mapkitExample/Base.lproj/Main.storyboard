@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,105 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uic-qU-UaL">
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="actionLocationEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XEe-Eg-7cn"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-xp-Occ">
+                                <rect key="frame" x="257" y="63" width="87" height="29"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="mWB-fw-yYd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Hybrid">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTraffic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqZ-mY-XmP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JY-1o-nAs">
+                                <rect key="frame" x="493" y="63" width="87" height="29"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="bHR-c1-XDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ous-N8-Y0G"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Kli-Zv-Ftx">
+                                <rect key="frame" x="0.0" y="106" width="600" height="494"/>
+                                <animations/>
+                            </mapView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7Iw-uP-wKk">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqy-Ye-4MT">
+                                <rect key="frame" x="20" y="63" width="87" height="29"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="5zZ-24-xz1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Track Me">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTrackMw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K43-5A-08j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uic-qU-UaL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3IY-42-QSw"/>
+                            <constraint firstItem="Kli-Zv-Ftx" firstAttribute="top" secondItem="cqy-Ye-4MT" secondAttribute="bottom" constant="14" id="3hi-D9-hLM"/>
+                            <constraint firstItem="y3f-xp-Occ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4DH-mY-Qx3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kli-Zv-Ftx" secondAttribute="bottom" id="5Av-wP-2WO"/>
+                            <constraint firstItem="y3f-xp-Occ" firstAttribute="top" secondItem="Uic-qU-UaL" secondAttribute="bottom" constant="13" id="8iq-b1-8Rv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2JY-1o-nAs" secondAttribute="trailing" id="A4w-P8-phq"/>
+                            <constraint firstItem="7Iw-uP-wKk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IC2-9q-89S"/>
+                            <constraint firstItem="2JY-1o-nAs" firstAttribute="top" secondItem="Uic-qU-UaL" secondAttribute="bottom" constant="13" id="Lig-7a-TSm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kli-Zv-Ftx" secondAttribute="trailing" constant="-20" id="Mi8-pB-7WM"/>
+                            <constraint firstItem="Uic-qU-UaL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QFR-UC-2Oj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cqy-Ye-4MT" secondAttribute="leading" id="WY4-uk-bVl"/>
+                            <constraint firstItem="Uic-qU-UaL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fza-Jg-dge"/>
+                            <constraint firstItem="7Iw-uP-wKk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uKS-hW-wcY"/>
+                            <constraint firstItem="cqy-Ye-4MT" firstAttribute="top" secondItem="Uic-qU-UaL" secondAttribute="bottom" constant="13" id="vRT-DF-d2X"/>
+                            <constraint firstItem="Uic-qU-UaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wiJ-1d-t7y"/>
+                            <constraint firstItem="Kli-Zv-Ftx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yhM-Yt-nzK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outActivityIndicator" destination="7Iw-uP-wKk" id="g5f-Dp-myT"/>
+                        <outlet property="outLocationField" destination="Uic-qU-UaL" id="rPJ-kQ-3Ua"/>
+                        <outlet property="outMapView" destination="Kli-Zv-Ftx" id="mhK-pe-6Qz"/>
+                        <outlet property="outResetBtn" destination="2JY-1o-nAs" id="UTd-Np-gdJ"/>
+                        <outlet property="outTrackBtn" destination="cqy-Ye-4MT" id="W9k-qF-kwy"/>
+                        <outlet property="outTypeBtn" destination="y3f-xp-Occ" id="0bg-5u-j7M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="318" y="349"/>
         </scene>
     </scenes>
 </document>
